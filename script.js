@@ -3,15 +3,23 @@ let seatLimit = 35;
 const seats = document.querySelectorAll('#seat');
 for (let seat of seats){
     seat.addEventListener('click', function(){
-        // seat left countdown
+        // seat left count
         const motSeatsLeft = document.getElementById('motSeatsLeft');
         const motSeatsLeftText = motSeatsLeft.innerText;
         const setNewSeat = motSeatsLeftText - 1;
         motSeatsLeft.innerText = setNewSeat;
         if(setNewSeat === seatLimit){
-            return alert('Vaiya, Goribs der 4 tar besi Tikect dewa hoy na .');
+            alert('Vaiya, Goribs der 4 tar besi Tikect dewa hoy na .');
+            return 
                 
         }
+
+        // tap to change background color
+
+        const keyBgChange = seat;
+        seat.classList.add('bg-[#1DD100]' , 'text-white');
+        keyBgChange.classList.add('bg-[#1DD100]')
+
         // set seat count
         const selectSeat = document.getElementById('selectSeat');
         const selectSeatText = selectSeat.innerText;
@@ -55,6 +63,7 @@ for (let seat of seats){
     });
 
 }
+
         // Discount price
 const apply = document.getElementById('apply');
 apply.addEventListener('click', function(){
@@ -67,6 +76,8 @@ apply.addEventListener('click', function(){
             const grandTotal = document.getElementById('grandTotal');
             const grandTotalText = grandTotal.innerText;
             grandTotal.innerText = discountPrice;
+            const discountLabel = document.getElementById('discountLabel');
+            discountLabel.classList.add('hidden');
         }
         else if ( CupponInputValue === 'Couple 20'){
             getDiscountPrice = totalPrice * 0.2 ;
@@ -74,6 +85,8 @@ apply.addEventListener('click', function(){
             const grandTotal = document.getElementById('grandTotal');
             const grandTotalText = grandTotal.innerText;
             grandTotal.innerText = discountPrice;
+            const discountLabel = document.getElementById('discountLabel');
+            discountLabel.classList.add('hidden');
         }
         else{
             alert('Vaiya Upore Cuppon Code Dewa Ase Valo kore Copy kore Paste Koren.')
@@ -81,7 +94,7 @@ apply.addEventListener('click', function(){
         }
     }
     else{
-        alert('Apni Eto Goribs, Prothome 4 Ta Tikect Kinen Tarpor Dekha Koiren .')
+        alert('Apni Eto Goribs, Prothome 4 Ta Tikect Kinen Tarpor Discount er jonno Dekha Koiren .')
         CupponInputValue = remove()
     }
 })
@@ -97,13 +110,8 @@ submit.addEventListener('click', function(){
     const numberValue = number.value;
     const emailValue = email.value;
     if(nameValue === '' || numberValue === '' || emailValue === ''){
-        alert(' vaiya information gula dile ki apnar facebook id hack korteci naki')
-        name.value = remove()
-        number.value = remove()
-        email.value = remove()
-    }
-    else{
-        alert('Apni Eto Goribs, Prothome 4 Ta Tikect Kinen Tarpor Dekha Koiren.')
+        const my_modal_1 = document.getElementById('my_modal_1');
+        alert(' vaiya information gula dile ki apnar facebook id hack korteci naki, information den')
         name.value = remove()
         number.value = remove()
         email.value = remove()
