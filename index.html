@@ -53,7 +53,7 @@
         <h1 class="mb-5 text-3xl lg:text-4xl font-bold">End-to-End Travel with <br> <span class="text-[#1DD100]">S Paribahan</span></h1>
         <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
         <!-- link button -->
-        <button onclick="buyTicket" class="btn border-none bg-[#1DD100]">Buy Tickets</button>
+        <a href="#showTicketSection"><button class="btn border-none bg-[#1DD100]">Buy Tickets</button></a>
       </div>
     </div>
     <div>
@@ -142,7 +142,7 @@
                     <p class="p text-sm">Coach-009-WEB ! AC_Business</p>
                 </div>
             </div>
-            <div class="flex text-[#1DD100] bg-[#1DD10026] h-10 w-36 flex text-sm justify-center items-center rounded-lg font-bold"><img class="w-6 h-6" src="images/seat-green.png">&nbsp;<span>40 </span>&nbsp; Seats left</div>           
+            <div class="flex text-[#1DD100] bg-[#1DD10026] h-10 w-36 flex text-sm justify-center items-center rounded-lg font-bold"><img class="w-6 h-6" src="images/seat-green.png">&nbsp;<span id="motSeatsLeft">40 </span>&nbsp; Seats left</div>           
         </div>
         <div class="lg:bg-[#F7F8F8] h-[250px] w-[400px] lg:w-[800px] lg:rounded-2xl mt-[-30px]">
 
@@ -178,7 +178,7 @@
     </section>
            <!-- P.H Paribahan section 2nd part -->
 
-           <section class="w-[400px] lg:w-[1140px] mx-auto bg-white rounded-3xl flex flex-col lg:flex-row mt-44 lg:mt-10 gap-14">
+           <section id="showTicketSection" class="w-[400px] lg:w-[1140px] mx-auto bg-white rounded-3xl flex flex-col lg:flex-row mt-44 lg:mt-10 gap-14">
             <div class="w-[400px] lg:w-[650px] p-5">
                 <h6 class="font-bold text-2xl">Select Your Seat</h6>
                 <div class="divider"></div>
@@ -213,29 +213,29 @@
             <!-- A1 serial -->
             <div class="flex gap-4 lg:gap-16">
             <div class="flex flex-col gap-4 lg:gap-5">
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">A1</kbd></div>
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">B1</kbd></div>
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">C1</kbd></div>
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">D1</kbd></div>
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">E1</kbd></div>
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">F1</kbd></div>
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">G1</kbd></div>
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">H1</kbd></div>
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">I1</kbd></div>
-                <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">J1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">A1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">B1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">C1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">D1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">E1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">F1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">G1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">H1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">I1</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">J1</kbd></div>
             </div>
                         <!-- A2 serial -->
                         <div class="flex flex-col gap-4 lg:gap-5">
-                 <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none   w-16 lg:w-20 h-14 p">A2</kbd></div>
-                 <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">B2</kbd></div>
-                    <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">C2</kbd></div>
-                    <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">D2</kbd></div>
-                 <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">E2</kbd></div>
-                 <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">F2</kbd></div>
-                 <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">G2</kbd></div>
-                 <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">H2</kbd></div>
-                 <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">I2</kbd></div>
-                    <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">J2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">A2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">B2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">C2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">D2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">E2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">F2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">G2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">H2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">I2</kbd></div>
+    <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">J2</kbd></div>
                  </div>
                     </div>
 
@@ -245,30 +245,30 @@
 
                         <div class="flex gap-4 lg:gap-16">
                             <div class="flex flex-col gap-4 lg:gap-5">
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">A3</kbd></div>
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">B3</kbd></div>
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">C3</kbd></div>
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">D3</kbd></div>
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">E3</kbd></div>
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">F3</kbd></div>
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">G3</kbd></div>
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">H3</kbd></div>
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">I3</kbd></div>
-     <div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">J3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">A3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">B3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">C3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">D3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">E3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">F3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">G3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">H3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">I3</kbd></div>
+     <div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">J3</kbd></div>
  </div>
                                         <!-- A2 serial --> 
 
     <div class="flex flex-col gap-4 lg:gap-5">
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">A4<kbd></div>
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">B4</kbd></div>
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">C4</kbd></div>
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">D4</kbd></div>
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">E4</kbd></div>
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">F4</kbd></div>
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">G4</kbd></div>
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">H4</kbd></div>
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">I4</kbd></div>
-<div class="flex justify-end"><kbd class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">J4</kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">A4<kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">B4</kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">C4</kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">D4</kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">E4</kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">F4</kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">G4</kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">H4</kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">I4</kbd></div>
+<div  class="flex justify-end"><kbd id="seat" class="kbd btn bg-[#0307121A] border-none  w-16 lg:w-20 h-14 p">J4</kbd></div>
 </div>
                     </div>
                 </div>
@@ -290,34 +290,34 @@
 
 
                 <div class="flex justify-between font-bold">
-                    <h6 class="">Seat <span class="px-1 rounded-md bg-[#1DD100]">0</span></h6>
+                    <h6 class="">Seat <span id="selectSeat" class="px-1 rounded-md bg-[#1DD100]">0</span></h6>
                     <h6 class="">Class</h6>
                     <h6 class="">Price</h6>
                 </div>
                 <div class="divider w-[350px]"></div>
                 <!-- output by javascript -->
                 <div class="flex justify-between font-semibold">
-                    <p id="seat" class="p"></p>
-                    <p id="class" class="p"></p>
-                    <p id="price" class="p"></p>
+                    <div id="showSeat" class="p"></div>
+                    <div id="showClass" class="p"></div>
+                    <div id="showPrice" class="p"></div>
                 </div>
                 <div class="divider w-[350px]"></div>
                 <!-- total price by javascript -->
                 <div class="flex justify-between font-bold">
                     <h6 class="">Total Price</h6>
-                    <h6 class="">BDT <span>0</span></h6>
+                    <h6 class="">BDT <span id="sumPrice">0</span></h6>
                 </div>
 
                 <!-- cupon fild -->
                 <label class="input input-bordered flex items-center gap-2 mt-5 border-none outline-none bg-white">
-                    <input type="text" class="grow outline-none border-none" placeholder="Have any copupon?"/>
-                    <button class="bg-[#1DD100] px-4 py-2 rounded-lg font-semibold text-white">Apply</button>
+                    <input id="discountInput" type="text" class="grow outline-none border-none" placeholder="Have any cuppon?"/>
+                    <button id="apply" class="bg-[#1DD100] px-4 py-2 rounded-lg font-semibold text-white">Apply</button>
                   </label>
 
                   <!-- grand total -->
                   <div class="flex justify-between font-bold mt-5">
                     <h6 class="">Grand Total</h6>
-                    <h6 class="">BDT <span>0</span></h6>
+                    <h6 class="">BDT <span id="grandTotal">0</span></h6>
                 </div>
 
             </div>
@@ -326,16 +326,17 @@
             <div class="mt-5 flex flex-col justify-center">
                 <div class="ml-10">
                 <h1 class="font-bold">Passenger Name*</h1>
-                <input type="text" placeholder="Enter your name" class="input input-bordered input-accent w-full  max-w-xs mt-2" /></div>
+                <input id="name" type="text" placeholder="Enter your name" class="input input-bordered input-accent w-full  max-w-xs mt-2" /></div>
                 <div class="ml-10">
                 <h1 class="font-bold mt-5">Phone Number*</h1>
-                <input type="number" placeholder="Enter your phone number" class="input input-bordered input-accent w-full max-w-xs mt-2" /></div>
+                <input id="number" type="number" placeholder="Enter your phone number" class="input input-bordered input-accent w-full max-w-xs mt-2" /></div>
                 <div class="ml-10">
                 <h1 class="font-bold mt-5">Email ID*</h1>
-                <input type="email" placeholder="Enter your email id" class="input input-bordered input-accent w-full max-w-xs mt-2" /></div>
-                <button class="bg-[#1DD100] w-80 ml-10 py-3 rounded-xl mt-5 font-bold text-white">Next</button>
+                <input id="email" type="email" placeholder="Enter your email id" class="input input-bordered input-accent w-full max-w-xs mt-2" /></div>
+                <button id="submit" class="bg-[#1DD100] w-80 ml-10 py-3 rounded-xl mt-5 font-bold text-white">Next</button>
             </div>
 
+            
 
                   <div class="flex justify-between w-[400px] px-10 mt-5">
                     <a href="#">Terms and Conditions</a>
@@ -351,6 +352,7 @@
     
 
 </main>
+<!-- footer -->
 
     <footer class="w-full bg-[#030712] h-[400px] py-5 lg:py-20 mt-20 px-5 lg:px-20">
         <div  class="flex justify-between">
