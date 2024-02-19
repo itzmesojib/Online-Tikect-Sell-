@@ -1,14 +1,18 @@
 let totalPrice = 0 ;
-let seatLimit = 35;
-const seats = document.querySelectorAll('#seat');
+let counter = 0;
+const seats = document.querySelectorAll('.kbd');
 for (let seat of seats){
     seat.addEventListener('click', function(){
+        if(counter === 4){
+            return alert('Vaiya, Goribs der 4 tar besi Tikect dewa hoy na .');
+        }
+        counter++
         // seat left count
         const motSeatsLeft = document.getElementById('motSeatsLeft');
         const motSeatsLeftText = motSeatsLeft.innerText;
         const setNewSeat = motSeatsLeftText - 1;
         motSeatsLeft.innerText = setNewSeat;
-        if(setNewSeat === seatLimit){
+        if(setNewSeat <= 35){
             alert('Vaiya, Goribs der 4 tar besi Tikect dewa hoy na .');
             return 
                 
@@ -26,13 +30,13 @@ for (let seat of seats){
         const selectSeatTextInt = parseInt(selectSeatText);
         const setNewSelectSeat = selectSeatTextInt + 1;
         selectSeat.innerText = setNewSelectSeat;
+     
         // inject seat number 
     const seatNumber = seat.innerText;
     const showSeat = document.getElementById('showSeat');
     const p = document.createElement('p');
     p.innerText = seatNumber;
     showSeat.appendChild(p)
-
     // inject seat class name
 
     const showClass = document.getElementById('showClass');
@@ -57,11 +61,7 @@ for (let seat of seats){
     const grandTotal = document.getElementById('grandTotal');
             const grandTotalText = grandTotal.innerText;
             grandTotal.innerText = totalPrice;
-    
-
-    
     });
-
 }
 
         // Discount price
