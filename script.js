@@ -1,12 +1,21 @@
 let totalPrice = 0 ;
 let counter = 0;
+bookedSeat = [];
 const seats = document.querySelectorAll('.kbd');
 for (let seat of seats){
-    seat.addEventListener('click', function(){
+    seat.addEventListener('click', function(a){
+        const seatId = a.target.id
         if(counter === 4){
             return alert('Vaiya, Goribs der 4 tar besi Tikect dewa hoy na .');
         }
         counter++
+        
+        if(bookedSeat.includes(a)){
+             alert('sorry')
+        }
+        bookedSeat.push(seatId);
+
+
         // seat left count
         const motSeatsLeft = document.getElementById('motSeatsLeft');
         const motSeatsLeftText = motSeatsLeft.innerText;
