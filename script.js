@@ -8,13 +8,13 @@ for (let seat of seats){
         if(counter === 4){
             return alert('Vaiya, Goribs der 4 tar besi Tikect dewa hoy na .');
         }
-        counter++
+ 
         
         if(bookedSeat.includes(seatId)){
             return alert('amra valo manus, 1 ta seat 2 bar sell kori na.')
         }
         bookedSeat.push(seatId);
-
+               counter++
 
         // seat left count
         const motSeatsLeft = document.getElementById('motSeatsLeft');
