@@ -1,7 +1,7 @@
 let totalPrice = 0 ;
 let counter = 0;
-bookedSeat = [];
-const seats = document.querySelectorAll('.kbd');
+let bookedSeat = [];
+const seats = document.querySelectorAll('.seatBtn');
 for (let seat of seats){
     seat.addEventListener('click', function(a){
         const seatId = a.target.id
@@ -10,8 +10,8 @@ for (let seat of seats){
         }
         counter++
         
-        if(bookedSeat.includes(a)){
-             alert('sorry')
+        if(bookedSeat.includes(seatId)){
+            return alert('amra valo manus, 1 ta seat 2 bar sell kori na.')
         }
         bookedSeat.push(seatId);
 
@@ -120,10 +120,8 @@ submit.addEventListener('click', function(){
     const emailValue = email.value;
     if(nameValue === '' || numberValue === '' || emailValue === ''){
         const my_modal_1 = document.getElementById('my_modal_1');
-        alert(' vaiya information gula dile ki apnar facebook id hack korteci naki, information den')
-        name.value = remove()
-        number.value = remove()
-        email.value = remove()
+        alert(' vaiya information gula dile ki apnar facebook id hack korteci naki, information den miya');
+
     }
 })
 
