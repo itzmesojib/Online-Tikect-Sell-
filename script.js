@@ -80,7 +80,7 @@ apply.addEventListener('click', function(){
     const CupponInputValue = discountInput.value;
     if( totalPrice >= 2200){
         if(CupponInputValue === 'NEW15'){
-            getDiscountPrice = totalPrice * 0.15 ;
+            const getDiscountPrice = totalPrice * 0.15 ;
             const discountPrice = totalPrice - getDiscountPrice
             const grandTotal = document.getElementById('grandTotal');
             const grandTotalText = grandTotal.innerText;
@@ -89,7 +89,7 @@ apply.addEventListener('click', function(){
             discountLabel.classList.add('hidden');
         }
         else if ( CupponInputValue === 'Couple 20'){
-            getDiscountPrice = totalPrice * 0.2 ;
+           const getDiscountPrice = totalPrice * 0.2 ;
             const discountPrice = totalPrice - getDiscountPrice
             const grandTotal = document.getElementById('grandTotal');
             const grandTotalText = grandTotal.innerText;
@@ -113,6 +113,7 @@ apply.addEventListener('click', function(){
 const name = document.getElementById('name');
 const number = document.getElementById('number');
 const email = document.getElementById('email');
+const submit = document.getElementById('submit');
 
 submit.addEventListener('click', function(){
     const nameValue = name.value;
@@ -121,7 +122,9 @@ submit.addEventListener('click', function(){
     if(nameValue === '' || numberValue === '' || emailValue === ''){
         const my_modal_1 = document.getElementById('my_modal_1');
         alert(' vaiya information gula dile ki apnar facebook id hack korteci naki, information den miya');
-
+    }
+    else{
+        
     }
 })
 
